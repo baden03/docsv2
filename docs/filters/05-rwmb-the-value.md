@@ -22,7 +22,7 @@ Name|Description
 Format the value of a date field:
 
 ```php
-add_filter( 'rwmb_meta', function( $value, $field_id, $args, $object_id ) {
+add_filter( 'rwmb_the_value', function( $value, $field_id, $args, $object_id ) {
     if ( $field_id === 'event_date' ) {
         $value = date( 'F j, Y', strtotime( $value ) );
     }
